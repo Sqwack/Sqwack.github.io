@@ -1,0 +1,48 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.coverScreen{
+  margin:0px;
+  padding:0px;
+  z-index:10;
+  position:fixed;
+  left:0px;
+  top:0px;
+  background-color:#00000010;
+  width:100%;
+  height:100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.contextList{
+  background-color: white;
+  border: 1px solid black;
+  width:fit-content;
+  position:fixed;
+}
+.contextItem{
+  background-color: white;
+  padding:3px;
+}
+.contextItem:hover{
+  background-color: aliceblue;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+.hoverable:hover{
+  background-color: antiquewhite;
+}
+.selectedPattern{
+  background-color:azure;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
