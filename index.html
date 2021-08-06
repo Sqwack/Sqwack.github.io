@@ -8,9 +8,10 @@
   </head>
   <body>
     <div>
-      <button id="sign_in">Sign In</button>
-      <button id="sign_out">Sign Out</button>
+      <button id="authorize_button">Sign In</button>
+      <button id="signout_button">Sign Out</button>
     </div>
+    <pre id="content" style="white-space: pre-wrap;"></pre>
     <div>
       <p>Pattern List</p>
       <table id ="patternTable">
@@ -18,8 +19,12 @@
       </table>
       
     </div>
-
-    <script src="https://apis.google.com/js/api.js"></script>
+    
+    <script src="driveApiHandler.js"></script>
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
     <script  type="module" src="script.js"></script>
   </body>
 </html>
